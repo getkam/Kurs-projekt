@@ -23,7 +23,7 @@ public class ProjektKoncowy {
         driver.get("http://www.selenium-shop.pl/sklep");
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        //zmiana commit 2
+        //zmiana commit 3
     }
 
 
