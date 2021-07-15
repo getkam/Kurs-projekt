@@ -23,7 +23,7 @@ public class ProjektKoncowy {
         driver.get("http://www.selenium-shop.pl/sklep");
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-
+        //zmiana commit 2
     }
 
 
@@ -43,7 +43,7 @@ public class ProjektKoncowy {
     }
 
     @Test
-    public void test(){
+    public void test(driver){
 
         WebElement IkonaKoszulki = driver.findElement(By.xpath ("//*[contains(text() , 'Koszulka West Ham United')]"));
         IkonaKoszulki.click();
@@ -126,6 +126,7 @@ public class ProjektKoncowy {
         //12.Zweryfikuj kwotę całkowitą produktu zamówienia (pole Suma)
         WebElement ZamowienieSuma = driver.findElement(By.xpath("//tr[@class='order-total']/td"));
         Assert.assertEquals(ZamowienieSuma.getText(), "90,00 zł");
+
 
     }
 
